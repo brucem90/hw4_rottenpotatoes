@@ -12,6 +12,8 @@ Rottenpotatoes::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  
+  match '/movies/:id/find_similar_movies', :to=>  "movies#find_similar_movies", :as => "find_similar_movies"
   resources :movies
 
   # Sample resource route with options:
